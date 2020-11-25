@@ -2,8 +2,8 @@ const repeatString = function (string, count) {
   //Create an array to concatinate string parameter
   let strarray = [];
   //Return Error if number cannot be used in for loop
-  if (count <= Number("-1")) {
-    return "ERROR";
+  if (count < 0) {
+    return 'ERROR';
   }
   //Loop array push for array to be length of count
   for (i = 0; i < count; i++) {
@@ -14,7 +14,7 @@ const repeatString = function (string, count) {
     }
   }
   //Concatenate array and return output
-  let output = strarray.join("");
+  let output = strarray.join('');
   return output;
 };
 
